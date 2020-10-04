@@ -58,7 +58,19 @@ def contact(request):
                 'tiaagrawal500@gmail.com', 'shekhar.infinity@gmail.com'],
             fail_silently=False
         )
-        HttpResponseRedirect('/contact')
+        send_mail(
+            'Thanks for your inquiry',
+            f'''
+                Hello, {fname}, we are glad that you have contacted us.
+                Please stay tuned till one of our team members contact you back. 
+
+                -Team Planet (NASA SpaceApps 2020)
+            ''',
+            'teamplanet.nasa2020@gmail.com',
+            [email, ],
+            fail_silently=False
+        )
+        HttpResponseRedirect('/')
 
     return render(request, 'core/contact.html')
 
