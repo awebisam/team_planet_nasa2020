@@ -38,7 +38,7 @@ Home
 
 <hr>
 
-<div class="container-fluid">
+<div class="">
     <div class="py-lg-16 py-6">
         <div class="container">
             <div class="row">
@@ -76,20 +76,21 @@ Home
     <hr>
 
     <!-- Section: Testimonials v.1 -->
-    <div class="pt-lg-13 pb-lg-14 py-8 bg-dark">
+    <div class="pt-lg-13 pb-lg-14 py-8"
+        style="background: url({% static 'img/earth.jpg' %}); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed">
         <div class="container">
             <div class="row">
                 <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
-                    <div class="text-center mb-12">
+                    <div style="background:rgba(0, 0, 0, 0.8)" class="text-center mb-12">
                         <h2 class="text-white mb-3 h1">
                             Lead Your Field. Impact the World.
                         </h2>
 
-                        <p class="lead mb-5">
+                        <p class="lead text-white mb-5">
                             We are 5 hardworking individuals and we have been working on this project to make a change.
                             We are cent percent dedicated to make this world a better place.
                         </p>
-                        <a href="{% url 'core:contact' %}" class="btn btn-secondary btn-lg">Have your say</a>
+                        <a href="{% url 'core:contact' %}" class="btn btn-secondary btn-lg mb-2">Have your say</a>
                     </div>
                 </div>
             </div>
