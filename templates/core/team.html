@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Our Team
+{% endblock title %}
+{% block content %}
+
+<div class="bg-shape bg-dark shadow-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="pt-lg-18 pb-lg-14 py-12  ">
+                    <h1 class="h2 text-white">Our Team</h1>
+                    <div class="custom-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class=""><a href="{% url 'core:index' %}"><b>Home</b> &nbsp;</a></li>
+                            <li class="" aria-current="page"> > Team</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% comment %} Team {% endcomment %}
+
+<div class="container">
+    <div class="row m-2 mt-14">
+
+
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card border-0">
+                <a href="" class="img-zoom">
+                    <img class="rounded img-fluid w-100" src="{% static 'img/shekhar.png' %}" alt="">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                    <a href="">
+                        <h3 class="mb-3">Shekhar Chaudhary</h3>
+                    </a>
+                    <p>
+                        Itahari, Nepal
+                    </p>
+                    <a href="mailto:shekhar.infinity@gmail.com" class="btn-primary-link">shekhar.infinity@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card border-0">
+                <a href="" class="img-zoom">
+                    <img class="rounded img-fluid w-100" src="{% static 'img/niti.png' %}" alt="">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                    <a href="">
+                        <h3 class="mb-3">Nitisha Nepal</h3>
+                    </a>
+                    <p>
+                        Urlabari, Nepal
+                    </p>
+                    <a href="mailto:neetesa@gmail.com" class="btn-primary-link">neetesa@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card border-0">
+                <a href="" class="img-zoom">
+                    <img class="rounded img-fluid w-100" src="{% static 'img/ria.png' %}" alt="">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                    <a href="">
+                        <h3 class="mb-3">Riya Agrawal</h3>
+                    </a>
+                    <p>
+                        Prayagraj, India
+                    </p>
+                    <a href="mailto:tiaagrawal500@gmail.com" class="btn-primary-link">tiaagrawal500@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card border-0">
+                <a href="" class="img-zoom">
+                    <img class="rounded img-fluid w-100" src="{% static 'img/henok.jpg' %}" alt="">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                    <a href="">
+                        <h3 class="mb-3">Henok Ademtew</h3>
+                    </a>
+                    <p>
+                        Bahir Dar, Ethiopia
+                    </p>
+                    <a href="mailto:henokb2124@gmail.com" class="btn-primary-link">henokb2124@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card border-0">
+                <a href="" class="img-zoom">
+                    <img class="rounded img-fluid w-100" src="{% static 'img/iamabisam.png' %}" alt="">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                    <a href="">
+                        <h3 class="mb-3">Aashish Bhandari</h3>
+                    </a>
+                    <p>
+                        Damak, Nepal
+                    </p>
+                    <a href="mailto:hello@awebisam.com" class="btn-primary-link"> hello@awebisam.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% comment %} End Team` {% endcomment %}
+{% endblock content %}

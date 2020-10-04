@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+{% block content %}
+
+<div
+    style="background: url({% static 'img/earth.jpg' %}); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-1 col-xl-10 col-md-12 col-12">
+                <div class="py-13 pt-lg-20 pb-lg-20 text-center text-light">
+                    <h1 class="display-3 font-weight-bold text-white mb-2"
+                        style="display:inline-block; background:rgba(0, 0, 0, 0.5)">
+                        This is Team Planet
+                        <p class="px-lg-14 mb-4 lead">
+                            We are hardworking team dedicated to be the best.
+                        </p>
+                    </h1>
+                    <br>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'core:portal' %}" class="btn btn-primary btn-lg">Go to findings</a>
+                    {% else %}
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary btn-lg">Signup</a>
+                    {% endif %}
+                    <a href="#about" class="btn btn-light btn-lg">About Project</a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container-fluid">
+    <div class="py-lg-16 py-6">
+        <div class="container">
+            <div class="row">
+                <div id="about" class="col-lg-12 col-md-12 col-12">
+                    <h2 class="mb-4">About Our Project</h2>
+                    <p class="lead">
+                        Sustainability involves the developments of economical, societal and environmental aspects
+                        without compromising our planet's resources so that future generations can meet theri
+                        needs.Sustainability involves taking action now to enable a future where the environment and
+                        living conditions are protected and enhanced. To this end, NASA seeks to use public funds
+                        efficiently and effectively, promote the health of the planet, and operate in a way that
+                        benefits the neighbors. NASA has been on the path to achieve long-term sustainability goals for
+                        many years through numerous efforts in energy conservation, recycling, water management,
+                        pollution prevention, design and construction, maintenance and operations, master planning, and
+                        electronic stewardship.
+                    </p>
+                    <p class="lead">
+                        Earth observation (EO) data inform our daily lives, providing critical information to help in
+                        our understanding of the interconnectedness of people, the planet, and prosperity. EO data are
+                        used in tracking biodiversity, assessing the impact of disasters, managing natural resources,
+                        observing land use changes, and mitigating climate change.
+                    </p>
+                    <p class="lead">
+                        The Group on Earth Observations (GEO), of which NASA is a partner, has developed a coordinated
+                        and consistent set of observations that can be used in assessing several of the SDGs.
+                    </p>
+                    <p class="lead">
+                        What our project does is watches the earth to provide us with the critical indepth knowledges
+                        and informations to access the sustainability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Section: Testimonials v.1 -->
+    <div class="pt-lg-13 pb-lg-14 py-8 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+                    <div class="text-center mb-12">
+                        <h2 class="text-white mb-3 h1">
+                            Lead Your Field. Impact the World.
+                        </h2>
+
+                        <p class="lead mb-5">
+                            We are 5 hardworking individuals and we have been working on this project to make a change.
+                            We are cent percent dedicated to make this world a better place.
+                        </p>
+                        <a href="{% url 'core:contact' %}" class="btn btn-secondary btn-lg">Have your say</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-lg-n14 mt-n10 pb-lg-6">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="mb-4 mb-lg-0">
+
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Andrew Mead<sup> Dummy review</sup></h4>
+                            <blockquote>
+                                I believe Team Planet is doing fantastic job to accomplish their aimbition. Thank you
+                                guys for inspiring me.
+                            </blockquote>
+                            <a href="#" class="btn-primary-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="mb-4 mb-lg-0 ">
+
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Maximillian Suarzmuller<sup> Dummy review</sup></h4>
+                            <p>
+                                I am so happy that these people are this much dedicated for making the world a better
+                                place. Best of luck, guys.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
+                <div class="mb-4 mb-lg-0">
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Nick Walter<sup> Dummy review</sup></h4>
+                            <p>
+                                Hey. This is something interesting. I am glad and proud of you guys. I will always be
+                                there for your help.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
