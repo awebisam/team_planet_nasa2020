@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'h#^o#kvbwf(ag9)a3=#5^9e^$@v=m17g9)1+@yi20_l-j+y^7&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['teamplanet.awebisam.com','www.teamplanet.awebisam.com','teamplanet2020.co']
+ALLOWED_HOSTS = []
 
 
 # Application definition

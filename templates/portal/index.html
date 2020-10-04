@@ -5,11 +5,88 @@ Portal
 {% endblock title %}
 {% block content %}
 
-<div class="container">
+<div class="mt-6">
 
-    <h1>
-        Lets discuss what to build
-    </h1>
+    <div class="pt-lg-13 pb-lg-14 py-8 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+                    <div class="text-center mb-12">
+                        <h2 class="text-white mb-3 h1">
+                            Welcome, {{user.profile.fname}}.
+                        </h2>
+                        <p class="lead mb-5">
+                            These in depth analysis of the geographical information from the satellite imagery can help
+                            us analyze the different indepth factors and mitigate any critical situations which would
+                            greatly aid in our efforts to take immediate actions to sustain our planet.This analysis has
+                            been done for a particular location considering the time-constraints of the event however we
+                            can analyze with available satellite datasets for any location and wide variety of
+                            sustainable constriants. And due to the limited time, we couldn't directly include our
+                            findings here. But it can be checked out on Google colab or GitHub repo.
+                        </p>
+                        <a href="https://colab.research.google.com/github/shekhar-git-hub/Project-Space-Watch/blob/main/analyzing_visualizing_large_scale_satellite_imagery.ipynb"
+                            class="btn btn-info btn-lg mr-1">Colab Notebook</a>
+                        <a href="https://colab.research.google.com/github/shekhar-git-hub/Project-Space-Watch/blob/main/analyzing_visualizing_large_scale_satellite_imagery.ipynb"
+                            class="btn btn-info btn-lg">GitHub Repo</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-lg-n14 mt-n10 pb-lg-6">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="mb-4 mb-lg-0">
+                    <img src="../assets/images/ft-img-1.jpg" alt=""
+                        class="img-fluid w-100 border-top border-primary border-top-4 rounded-top">
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Source code</h4>
+                            <p>
+                                This site has been built with Django, a Python web framework.
+                            </p>
+                            <a href="#" class="btn-primary-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="mb-4 mb-lg-0">
+                    <img src="../assets/images/ft-img-2.jpg" alt=""
+                        class="img-fluid w-100 border-top border-primary border-top-4 rounded-top">
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Podcast &amp; Events</h4>
+                            <p>
+                                Podcast gives you access to Coach’s proven strategies for success so you can accomplish
+                                your goals, too.
+                            </p>
+                            <a href="#" class="btn-primary-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 d-md-none d-lg-block">
+                <div class="mb-4 mb-lg-0">
+                    <img src="../assets/images/ft-img-3.jpg" alt=""
+                        class="img-fluid w-100 border-top border-primary border-top-4 rounded-top">
+                    <div class="border-top-0 border rounded-bottom bg-white">
+                        <div class="p-4">
+                            <h4>Online Courses</h4>
+                            <p>
+                                Online course will help you better understand your leadership business and push you to
+                                the next level.
+                            </p>
+                            <a href="#" class="btn-primary-link">Start Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </div>
 
